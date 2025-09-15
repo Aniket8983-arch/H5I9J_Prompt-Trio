@@ -5,19 +5,38 @@
   <title>Offline Activity Suggester</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <h1>Reduce Screen Time</h1>
+  <main class="container">
+    <h1>🌿 Reduce Screen Time</h1>
+<p id="daily-timer"></p> <!-- Daily timer here -->
 
-  <!-- Suggest activity -->
-  <button id="suggest-btn">Suggest Activity</button>
-  <p id="activity"></p>
 
-  <!-- New section: Save favorite -->
-  <button id="favorite-btn">Save Favorite</button>
-  <ul id="favorites"></ul>
+    <!-- Suggestion Section (corner box) -->
+    <aside class="suggestion-box">
+      <h2>🎲 Suggestions</h2>
+      <button id="suggest-btn">Suggest Activity</button>
+      <p id="activity"></p>
+    </aside>
+
+    <!-- Add / Choose Activity -->
+    <section class="custom-section">
+      <h2>➕ Add or Select Activity</h2>
+      <input id="new-activity" placeholder="Enter your own activity">
+      <button id="add-activity-btn">Add Activity</button>
+
+      <select id="activity-select">
+        <option value="">-- Choose Suggested Activity --</option>
+      </select>
+      <button id="choose-activity-btn">Select Activity</button>
+    </section>
+
+    <!-- To-Do Done List -->
+    <section class="todo-section">
+      <h2>✅ Activities To-Do</h2>
+      <ul id="done-list"></ul>
+    </section>
+  </main>
 
   <script src="app.js"></script>
 </body>
-
 </html>

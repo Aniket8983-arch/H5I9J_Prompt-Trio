@@ -1,27 +1,100 @@
+/* General Dark Theme */
 body {
   font-family: Arial, sans-serif;
+  background: #121212; /* dark background */
+  color: #ffffff;      /* all text white */
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+#daily-timer {
   text-align: center;
-  margin-top: 50px;
-  background: #f7f9fc;
-  color: #333;
+  font-size: 1em;
+  margin-bottom: 15px;
+  color: #bbbbbb; /* slightly lighter gray */
+}
+
+.container {
+  background: #1e1e1e;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 800px;
+  width: 100%;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #ffffff; /* white headings */
 }
 
 button {
-  padding: 10px 20px;
-  background: #4CAF50;
-  color: white;
+  padding: 10px 15px;
+  margin: 5px;
+  background: #333333; /* dark grey */
+  color: #ffffff;      /* white text */
+  font-weight: bold;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
 
 button:hover {
-  background: #45a049;
+  background: #444444; /* slightly lighter grey */
+  transform: scale(1.05);
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #2c2c2c;
+  color: white;
+  margin: 5px 0;
+}
+
+.suggestion-box {
+  background: #2c2c2c;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 #activity {
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 1.2em;
-  font-weight: bold;
-  color: #2c3e50;
+  color: #ffffff; /* activity text white */
+}
+
+#done-list {
+  margin-top: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+#done-list li {
+  padding: 10px;
+  border: 1px solid #444;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  background: #2c2c2c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+
+.done-btn {
+  background: #333333; /* dark grey */
+  color: white;        /* white text */
+  border: none;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.done-btn:hover {
+  background: #555555; /* lighter grey on hover */
 }
