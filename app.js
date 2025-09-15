@@ -12,3 +12,17 @@ document.getElementById("suggest-btn").addEventListener("click", () => {
   const randomIndex = Math.floor(Math.random() * activities.length);
   document.getElementById("activity").textContent = activities[randomIndex];
 });
+// store favorites
+const favorites = [];
+
+document.getElementById("favorite-btn").addEventListener("click", () => {
+  const currentActivity = document.getElementById("activity").textContent;
+  if (currentActivity && !favorites.includes(currentActivity)) {
+    favorites.push(currentActivity);
+
+    // show favorite in list
+    const li = document.createElement("li");
+    li.textContent = currentActivity;
+    document.getElementById("favorites").appendChild(li);
+  }
+});
